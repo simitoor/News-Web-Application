@@ -1,7 +1,11 @@
 const API_KEY="afa6d92c0db34d79821bb1fb4a8c255f";
 const url="https://newsapi.org/v2/everything?q=";
 window.addEventListener("load", () => fetchNews("India"));
-
+{
+    status: "error";
+    code: "corsNotAllowed";
+    message: "Requests from the browser are not allowed on the Developer plan, except from localhost."
+}
 function reload() {
     window.location.reload();
 }
